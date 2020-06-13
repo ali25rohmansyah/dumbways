@@ -13,5 +13,11 @@ SELECT * FROM news WHERE User_id = 1;
 -- menampilkan detail berita
 SELECT * FROM news WHERE id = 1;
 
+-- menambah data berita
+INSERT INTO news (title, image, deskripsi) VALUES ('judul 1', 'gambar2.jpg', 'ini adalah berita pertama');
+
+-- menambah users
+INSERT INTO users (name, email) VALUES ('Ali Rohmansyah', 'ali25rohmansyah@gmail.com');
+
 
 
