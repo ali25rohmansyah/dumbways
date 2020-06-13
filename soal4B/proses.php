@@ -38,4 +38,14 @@ include_once("config.php");
 
     }
 
+    if(isset($_POST['submitUser'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+
+        mysqli_query($con, "INSERT INTO users (name, email) VALUES ('$name', '$email')") or die (mysqli_error($con));
+
+        echo "<script>window.location='index.php';</script>";
+
+    }
+
 ?>
