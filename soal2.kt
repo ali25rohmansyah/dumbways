@@ -1,14 +1,14 @@
 fun main(){
-    concatWord("Lesley", "karrie")
+    gabungKata("Lesley", "karrie")
 }
 
-fun concatWord (kataPertama : String, kataKedua: String){
+fun gabungKata (kataPertama : String, kataKedua: String){
     if(kataPertama.length != kataKedua.length){
         println("panjang kata tidak sama")
     }else{
-        val size = kataPertama.length - 1
+        val ukuran = kataPertama.length - 1
         var concat = ""
-        for (i in 0..size){
+        for (i in 0..ukuran){
             concat += kataPertama[i]
             concat +=kataKedua[i]
         }
